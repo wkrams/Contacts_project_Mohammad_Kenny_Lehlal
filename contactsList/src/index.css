@@ -5,7 +5,10 @@ body {
   max-width: 38rem;
   padding: 2rem;
 }
-textarea {
-  border: 0;
-  outline: 0;
+
+.container {
+  display: grid;
+}
+ul.contact-list {
+  list-style-type: none;
 }

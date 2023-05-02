@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISTES DE CONTATES AVEC ELECTRON</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Liste des Contacts</h1>
-    <ul id="liste-contact"></ul>
-    <button id="button">Ajouter</button>
+    <div class="container">
+      <h1>LISTES DE CONTATES AVEC ELECTRON</h1>
+      <form action="">
+        <ul id="contact-list">
+          <button id="btn-add-contact" type="submit">Ajouter Contact</button>
+          <button id="btn-import-contact" type="submit">
+            Importer contacts
+          </button>
+          <li class="contact-list-item">
+            <label for="contact-input">Contact </label>
+            <input type="text" id="contact-input" />
+            <input type="checkbox" name="chk-select" id="chk-select" />
+          </li>
+        </ul>
+      </form>
+    </div>
   </body>
 </html>
