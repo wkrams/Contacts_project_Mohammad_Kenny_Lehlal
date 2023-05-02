@@ -1,0 +1,35 @@
+[
+  {
+    "nom": "Philippe",
+    "preniom": "Auguste",
+    "email": "abc@gmail.com",
+    "photo": "/image/a.png",
+    "address": {
+      "code": 75000,
+      "ville": "paris",
+      "pasy": "France"
+    }
+  },
+  {
+    "nom": "Victor",
+    "preniom": "Hugo",
+    "email": "def@gmail.com",
+    "photo": "/image/b.png",
+    "address": {
+      "code": 95000,
+      "ville": "Cergy",
+      "pasy": "France"
+    }
+  },
+  {
+    "nom": "Nicloas",
+    "preniom": "Sarkozy",
+    "email": "ghi@gmail.com",
+    "photo": "/image/c.png",
+    "address": {
+      "code": 93000,
+      "ville": "Saint-denis",
+      "pasy": "France"
+    }
+  }
+]
