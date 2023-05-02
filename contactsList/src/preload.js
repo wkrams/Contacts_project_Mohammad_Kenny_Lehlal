@@ -5,13 +5,14 @@ const { ipcRenderer } = require("electron");
 
 window.addEventListener("DOMContentLoaded", () => {
   //click sur button pour ajouter contact
-  document.querySelector("#button").addEventListener("click", () => {
+  document.querySelector("#btn-add-contact").addEventListener("click", (e) => {
+    e.preventDefault();
     ipcRenderer.invoke("click-button");
   });
   const imagedir = "image/";
   //recevoir json data
   ipcRenderer.on("json-data", (event, datas) => {
-    const liste = document.querySelector("#liste-contact");
+    const liste = document.querySelector("#contact-list");
     datas = JSON.parse(datas);
     datas.map((data) => {
       const li = document.createElement("li");
@@ -29,4 +30,6 @@ window.addEventListener("DOMContentLoaded", () => {
       li.innerHTML += data.address.pays;
     });
   });
+  //recupere les valuer de contact
+  document.querySelector("#btn-create-contact").
 });

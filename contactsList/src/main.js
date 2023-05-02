@@ -35,12 +35,9 @@ ipcMain.handle("click-button", () => {
     resizable: false,
     parent: mainWindow,
     title: "Ajouter Contact",
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-    },
   });
   secodaryWinsow.loadFile(path.join(__dirname, "contact.html"));
-  console.log("ok");
+  //console.log("ok");
 });
 
 // This method will be called when Electron has finished
