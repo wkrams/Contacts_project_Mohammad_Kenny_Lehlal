@@ -1,20 +1,68 @@
-.<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Créer / Modifier Contact</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <main>
-      <textarea
-        name="contact-area"
-        id="contact-area"
-        cols="68"
-        rows="50"
-      ></textarea>
-    </main>
+    <div class="container">
+      <h1>Créer un contact</h1>
+      <form action="">
+      <ul id="contact-list">
+        <button id="btn-add-contact" type="submit">Ajouter Contact</button>
+
+        <li class="contact-list-item">
+
+          <div class="field">
+            <label for="first-name">Contact </label>
+            <input type="text" id="first-name" name="first-name">
+            <input type="checkbox" name="chk-first-name" id="chk-first-name">
+          </div>
+
+          <div class="field">
+            <label for="last-name">Contact </label>
+            <input type="text" id="last-name" name="last-name">
+            <input type="checkbox" name="chk-last-name" id="chk-last-name">
+          </div>
+
+          <div class="field">
+            <label for="email">Contact </label>
+            <input type="text" id="email" name="email">
+            <input type="checkbox" name="chk-email" id="chk-email">
+          </div>
+          <div class="field">
+            <label for="adress">Adresse </label>
+            <input type="text" id="contact-input">
+            <input type="checkbox" name="chk-select" id="chk-select">
+          </div>
+          <div class="field">
+            <label for="rue">Rue </label>
+            <input type="text" id="adress-rue" name="adress-rue">
+            <input type="checkbox" name="chk-rue" id="chk-rue">
+          </div>
+          <div class="field">
+            <label for="adress-code-postal">Code postal </label>
+            <input type="text" id="adress-code-postal" name="adress-code-postal">
+            <input type="checkbox" name="chk-adress-code-postal" id="chk-adress-code-postal">
+          </div>
+          <div class="field">
+            <label for="adress-ville">Ville </label>
+            <input type="text" id="adress-ville" name="adress-ville">
+            <input type="checkbox" name="chk-adress-ville" id="chk-adress-ville">
+          </div>
+          <div class="field">
+            <label for="adress-pays">Pays </label>
+            <input type="text" id="adress-pays" name="adress-pays">
+            <input type="checkbox" name="chk-adress-pays" id="chk-adress-pays">
+          </div>
+
+
+        </li>
+      </ul>
+    </form>
+    </div>
   </body>
 </html>
