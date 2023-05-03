@@ -3,8 +3,8 @@
     "nom": "Philippe",
     "prenom": "Auguste",
     "email": "abc@gmail.com",
-    "photo": "a.PNG",
-    "address": {
+    "photo": "a.png",
+    "addresse": {
       "code": 75000,
       "ville": "paris",
       "pays": "France"
@@ -14,8 +14,8 @@
     "nom": "Victor",
     "prenom": "Hugo",
     "email": "def@gmail.com",
-    "photo": "b.PNG",
-    "address": {
+    "photo": "b.png",
+    "addresse": {
       "code": 95000,
       "ville": "Cergy",
       "pays": "France"
@@ -25,8 +25,8 @@
     "nom": "Nicloas",
     "prenom": "Sarkozy",
     "email": "ghi@gmail.com",
-    "photo": "c.PNG",
-    "address": {
+    "photo": "c.png",
+    "addresse": {
       "code": 93000,
       "ville": "Saint-denis",
       "pays": "France"
