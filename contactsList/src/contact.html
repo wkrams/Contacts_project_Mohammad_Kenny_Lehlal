@@ -11,55 +11,74 @@
     <div class="container">
       <h1>Créer un contact</h1>
       <form action="">
-      <ul id="contact-list">
-        <li class="contact-list-item">
+        <ul id="contact-list">
+          <li class="contact-list-item">
+            <div class="field">
+              <label for="first-name">Nom </label>
+              <input type="text" id="first-name" name="first-name" />
+              <input
+                type="checkbox"
+                name="chk-first-name"
+                id="chk-first-name"
+              />
+            </div>
 
-          <div class="field">
-            <label for="first-name">Nom </label>
-            <input type="text" id="first-name" name="first-name">
-            <input type="checkbox" name="chk-first-name" id="chk-first-name">
-          </div>
+            <div class="field">
+              <label for="last-name">Prénom </label>
+              <input type="text" id="last-name" name="last-name" />
+              <input type="checkbox" name="chk-last-name" id="chk-last-name" />
+            </div>
 
-          <div class="field">
-            <label for="last-name">Prénom </label>
-            <input type="text" id="last-name" name="last-name">
-            <input type="checkbox" name="chk-last-name" id="chk-last-name">
-          </div>
-
-          <div class="field">
-            <label for="email">Email </label>
-            <input type="text" id="email" name="email">
-            <input type="checkbox" name="chk-email" id="chk-email">
-          </div>
-          <div id="adress" class="field">
-            <label for="adress">Adresse </label>
+            <div class="field">
+              <label for="email">Email </label>
+              <input type="text" id="email" name="email" />
+              <input type="checkbox" name="chk-email" id="chk-email" />
+            </div>
+            <div id="adress" class="field">
+              <label for="adress">Adresse </label>
 
               <div class="field">
                 <label for="rue">Rue </label>
-                <input type="text" id="adress-rue" name="adress-rue">
-                <input type="checkbox" name="chk-rue" id="chk-rue">
+                <input type="text" id="adress-rue" name="adress-rue" />
+                <input type="checkbox" name="chk-rue" id="chk-rue" />
               </div>
               <div class="field">
                 <label for="adress-code-postal">Code postal </label>
-                <input type="text" id="adress-code-postal" name="adress-code-postal">
-                <input type="checkbox" name="chk-adress-code-postal" id="chk-adress-code-postal">
+                <input
+                  type="text"
+                  id="adress-code-postal"
+                  name="adress-code-postal"
+                />
+                <input
+                  type="checkbox"
+                  name="chk-adress-code-postal"
+                  id="chk-adress-code-postal"
+                />
               </div>
               <div class="field">
                 <label for="adress-ville">Ville </label>
-                <input type="text" id="adress-ville" name="adress-ville">
-                <input type="checkbox" name="chk-adress-ville" id="chk-adress-ville">
+                <input type="text" id="adress-ville" name="adress-ville" />
+                <input
+                  type="checkbox"
+                  name="chk-adress-ville"
+                  id="chk-adress-ville"
+                />
               </div>
               <div class="field">
                 <label for="adress-pays">Pays </label>
-                <input type="text" id="adress-pays" name="adress-pays">
-                <input type="checkbox" name="chk-adress-pays" id="chk-adress-pays">
+                <input type="text" id="adress-pays" name="adress-pays" />
+                <input
+                  type="checkbox"
+                  name="chk-adress-pays"
+                  id="chk-adress-pays"
+                />
               </div>
-          </div>
-
-        </li>
-        <button id="btn-create-contact" type="submit">Creéer Contact</button>
-      </ul>
-    </form>
+            </div>
+          </li>
+          <button id="btn-create-contact" type="submit">Creéer Contact</button>
+        </ul>
+      </form>
     </div>
   </body>
+  <script src="renderContact.js"></script>
 </html>

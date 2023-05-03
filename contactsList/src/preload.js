@@ -4,6 +4,14 @@
 const { ipcRenderer } = require("electron");
 
 window.addEventListener("DOMContentLoaded", () => {
+  //click sur button pour importer des contact
+  document
+    .querySelector("#btn-import-contact")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      ipcRenderer.invoke("click-for-importer");
+    });
+
   //click sur button pour ajouter contact
   document.querySelector("#btn-add-contact").addEventListener("click", (e) => {
     e.preventDefault();
@@ -30,6 +38,35 @@ window.addEventListener("DOMContentLoaded", () => {
       li.innerHTML += data.address.pays;
     });
   });
-  //recupere les valuer de contact
-  document.querySelector("#btn-create-contact").
+});
+//recupere les valuer de contact
+window.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelector("#btn-create-contact")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log("clicked");
+      let nom = document.querySelector("#first-name").value;
+      let prenom = document.querySelector("#last-name").value;
+      let email = document.querySelector("#email").value;
+      let adressRue = document.querySelector("#adress-rue").value;
+      let adresseCodePostale = document.querySelector(
+        "#adress-code-postal"
+      ).value;
+      let adresseVille = document.querySelector("#adress-ville").value;
+      let adressePays = document.querySelector("#adress-pays").value;
+      let contact = {
+        nom: nom,
+        prenom: prenom,
+        email: email,
+        address: {
+          addressRue: adressRue,
+          code: adresseCodePostale,
+          ville: adresseVille,
+          pays: adressePays,
+        },
+      };
+      //console.log(contact);
+      ipcRenderer.invoke("insert-contact", contact);
+    });
 });
